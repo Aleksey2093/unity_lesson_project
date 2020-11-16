@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -32,7 +33,9 @@ public class PlayerScript : MonoBehaviour
             }
             animator.SetBool("run",x !=0);
         } else {
-
+            // UnityEngine.WWWForm wWW = new WWWForm();
+            // wWW.AddField("a","b");
+            // UnityWebRequest.Get("localhost/get/name?barcode="+"codeee").SendWebRequest()
         }
     }
     void OnCollisionEnter2D(Collision2D other)
